@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Form</title>
+    <img scr="https://www.google.com/imgres?q=software%20company%20logo%20design&imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F004%2F397%2F655%2Fnon_2x%2Fworld-tech-logo-design-template-icons-free-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fsoftware-company-logo&docid=jXpkNaUeMOp9uM&tbnid=hHpLtDMSsnRPqM&vet=12ahUKEwjIzsmL2KmMAxVeT2cHHUmdFAMQM3oECGgQAA..i&w=980&h=980&hcb=2&ved=2ahUKEwjIzsmL2KmMAxVeT2cHHUmdFAMQM3oECGgQAA">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            width: 50%;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .radio-group {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Internship Application Form</h2>
+    <form action="submit_form.php" method="post">
+        
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label>Gender:</label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <label for="linkedin">LinkedIn Profile (Optional):</label>
+        <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+
+        <label for="college">College/University:</label>
+        <input type="text" id="college" name="college" required>
+
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree" required>
+
+        <label for="year">Year of Study:</label>
+        <select id="year" name="year" required>
+            <option value="">Select Year</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+            <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+        </select>
+
+        <label for="skills">Technical Skills:</label>
+        <textarea id="skills" name="skills" rows="4" required></textarea>
+
+        <label for="duration">Preferred Internship Duration:</label>
+        <select id="duration" name="duration" required>
+            <option value="">Select Duration</option>
+            <option value="1 Month">1 Month</option>
+            <option value="2 Months">2 Months</option>
+            <option value="3 Months">3 Months</option>
+            <option value="6 Months">6 Months</option>
+        </select>
+
+        <label for="motivation">Why do you want this internship?</label>
+        <textarea id="motivation" name="motivation" rows="4" required></textarea>
+
+        <label for="resume">Upload Resume (PDF only):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+</body>
+</html>
